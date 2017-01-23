@@ -1,0 +1,23 @@
+
+CREATE DATABASE access;
+
+-----------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE `tbl_numplatedetail` (
+  `number` varchar(45) NOT NULL,
+  `owner` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`number`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-----------------------------------------------------------------------------------------------------------------
+
+INSERT INTO `access`.`tbl_numplatedetail`
+(`number`,
+`owner`)
+VALUES
+("1Z01433","ownername1"),
+("IZD1433","ownername2"),("Z0E1433","ownername3"),("ZDE1433","ownername4");
+-----------------------------------------------------------------------------------------------------------------
+
+select * from  access.tbl_numplatedetail;
+-----------------------------------------------------------------------------------------------------------------
